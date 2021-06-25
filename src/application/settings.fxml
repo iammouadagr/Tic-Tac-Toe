@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="540.0" prefWidth="747.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Settings">
+   <children>
+      <Pane layoutX="7.0" prefHeight="532.0" prefWidth="732.0">
+         <children>
+            <Label layoutX="163.0" layoutY="115.0" text="Board dimensions :">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idColumn" layoutX="324.0" layoutY="111.0" prefHeight="25.0" prefWidth="29.0" promptText="3" />
+            <Label layoutX="360.0" layoutY="116.0" text="X">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="idRow" layoutX="377.0" layoutY="111.0" prefHeight="25.0" prefWidth="29.0" promptText="3" />
+            <Button fx:id="idSaveButton" layoutX="320.0" layoutY="178.0" mnemonicParsing="false" onAction="#ActionSaveDimensions" prefHeight="37.0" prefWidth="66.0" style="-fx-background-color:#43deb7;                                             -fx-background-radius: 6, 5;                                             -fx-background-insets: 0, 1;                                             -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );                                             -fx-text-fill: #F2F2F2;                                             " text="Save" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="286.0" layoutY="233.0" text="AI Configuration">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonValider" layoutX="310.0" layoutY="470.0" mnemonicParsing="false" onAction="#validerConfig" prefHeight="37.0" prefWidth="101.0" style="-fx-background-color:#43deb7;                                             -fx-background-radius: 6, 5;                                             -fx-background-insets: 0, 1;                                             -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );                                             -fx-text-fill: #F2F2F2;                                             " text="Submit" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Button>
+            <TextField fx:id="facileH" layoutX="82.0" layoutY="327.0" prefHeight="25.0" prefWidth="138.0" />
+            <TextField fx:id="facileR" layoutX="297.0" layoutY="327.0" prefHeight="25.0" prefWidth="138.0" />
+            <TextField fx:id="facilenbLayers" layoutX="536.0" layoutY="327.0" prefHeight="25.0" prefWidth="138.0" />
+            <TextField fx:id="difficileH" layoutX="82.0" layoutY="411.0" prefHeight="25.0" prefWidth="138.0" />
+            <TextField fx:id="difficleR" layoutX="299.0" layoutY="411.0" prefHeight="25.0" prefWidth="138.0" />
+            <TextField fx:id="difficilenbLayers" layoutX="536.0" layoutY="411.0" prefHeight="25.0" prefWidth="138.0" />
+            <Label layoutX="339.0" layoutY="278.0" prefHeight="27.0" prefWidth="44.0" text="Easy">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label layoutX="337.0" layoutY="368.0" prefHeight="25.0" prefWidth="55.0" text="Hard">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Button fx:id="idBackButton" layoutX="15.0" layoutY="18.0" mnemonicParsing="false" onAction="#BackButtonAction" prefHeight="37.0" prefWidth="44.0">
+               <graphic>
+                  <ImageView fx:id="backIcon" fitHeight="23.0" fitWidth="35.0" layoutX="25.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resources/images/left-arrow.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+
+            <Button fx:id="manageModelsButton" layoutX="232.0" layoutY="32.0" mnemonicParsing="false" onAction="#actionManageModels" text="Manage Models">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="420.0" layoutY="105.0" prefHeight="37.0" prefWidth="170.0" text="The number of the board's rows and columns" wrapText="true" />
+            <Label layoutX="392.0" layoutY="30.0" prefHeight="37.0" prefWidth="157.0" text="Shows the models existed and delete if needed" wrapText="true" />
+            <Label fx:id="labelSubmit" layoutX="449.0" layoutY="480.0" />
+         </children>
+
+      </Pane>
+   </children>
+</AnchorPane>
